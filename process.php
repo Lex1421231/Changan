@@ -7,9 +7,9 @@
     $number = urldecode($number);
     $name = trim($name);
     $number = trim($number);
-    /echo $name;
-    /echo "<br>";
-    /echo $number;
+    echo $name;
+    echo "<br>";
+    echo $number;
     mail("Lex142@inbox.ru", "Заявка с сайта", "Имя:".$name.". Номер: ".$number ,"From: example2@mail.ru \r\n");
     if (mail("Lex142@inbox.ru", "Заказ с сайта", "Имя:".$name.". Номер: ".$number ,"From: example2@mail.ru \r\n"))
     {
