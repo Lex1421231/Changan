@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/modern-normalize.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="/src/icon/changan_logo.svg" alt="logo" class="nav_logo">
+            </div>
+            <div class="nav_menu">
+                <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li><a href="../index.html" class="menu-item">Главная</a>
+                        <li>
+                        <li><a href="../about.html" class="menu-item">Каталог</a>
+                        <li>
+                        <li><a href="../tech.html" class="menu-item">Записаться на Тест-Драйв</a>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="liner">
+            <hr class="line">Автомобили CHANGAN
+            <hr class="line">
+        </div>
+
+    </section>
+    <section class="container">
+        <div class="carousel">
+            <div class="carousel-container">
+                <img class="carousel_img" src="/src/img/corusel/alsvin.png" alt="Image 1">
+                <img class="carousel_img" src="/src/img/corusel/cs55plus.png" alt="Image 2">
+                <img class="carousel_img" src="/src/img/corusel/lamore.png" alt="Image 3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+    <section class="container">
+        <div class="catalog_btn">
+            <button class="catalog">Все модели</button>
+        </div>
+    </section>
+    <section class="container">
+        <p class="title_text">Производитель Changan – один из крупнейших автомобилестроительных концернов в Китае.
+            Каждая машина сходит с
+            конвейера,
+            проходя более 4500 тестов по 15 разным направлениям. Автомобиль Changan – это плод совместной работы
+            инженеров-проектировщиков из Японии, отвечающих за интерьер, Великобритании, разрабатывающих двигатели и
+            КПП, США,
+            оборудующих электроникой и Италии, создающих дизайн кузова. Машины Changan – сбалансированное сочетание
+            надежности,
+            безопасности и производительности с привлекательными ценами. В переводе название марки буквально означает
+            «надежность,
+            проверенная временем».</p>
+    </section>
+    <section class="container">
+        <p class="text">
+            Записаться на Тест-Драйв:
+        </p>
+    </section>
+    <section class="container">
+        <div class="form_number">
+            <form action="/src/php/send.php" method="post">
+                <input type="text" name="name" placeholder="Укажите Имя" required>
+                <input type="text" name="number" placeholder="Номер телефона" required>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </section>
+    <section class="container">
+        <div class="liner">
+            <hr class="line">Новости
+            <hr class="line">
+        </div>
+    </section>
+    <script src="/src/js/app.js"></script>
+</body>
+
+</html>
